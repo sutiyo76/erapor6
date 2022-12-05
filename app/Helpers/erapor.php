@@ -361,3 +361,14 @@ function tingkat_kelas($kelas_10, $kelas_11, $kelas_12, $kelas_13){
     //dd($filtered->all());
     return $filtered->implode('tingkat', ', ');
 }
+/**
+	 * di gunakan untuk menampilkan ttd ttd 
+     * mryes
+	*/
+	function ttdKepsekDiIndentitasSiswa(){ 
+	    $lokasiTtd  = asset('images/ttd.png');
+	    $tinggi     = 90;
+	    $lebar      = 160;
+	    $data = '<img src='.$lokasiTtd.' height='.$tinggi.' width='.$lebar.'>';
+	    return $data;
+	}
